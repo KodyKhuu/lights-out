@@ -67,11 +67,16 @@ const Board = ({ nrows, ncols, chanceLightStartsOn }) => {
 
   return (
     !hasWon
-      ? <table className='Board'>
-        <tbody>
-          {tblBoard}
-        </tbody>
-      </table>
+      ?
+      <div>
+        <h1> Lights Out </h1>
+        <h2> Turn Off All of the Lights! </h2>
+        <table className='Board'>
+          <tbody>
+            {tblBoard}
+          </tbody>
+        </table>
+      </div>
       : <h1> You won ! </h1>
 
   )
